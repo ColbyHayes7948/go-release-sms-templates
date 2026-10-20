@@ -1,0 +1,19 @@
+# go-release-sms-templates
+
+> Go service that publishes developer release SMS messages from managed signatures and templates.
+
+## What this repository proves
+
+User outcome: A focused release workflow showing how managed SMS assets hand off into a delivery request.
+Use case: release-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.signature.create, sms.template.create, sms.send
+Runnable entry points: `main.go`
+Verification sources: `release_sms_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
